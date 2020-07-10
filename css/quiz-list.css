@@ -1,0 +1,28 @@
+/*page container for about us page*/
+.quiz-list-container{
+  max-width: 75%;
+  margin:0 auto;
+}
+
+.quiz-list{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.quiz-list a{
+  padding: 2rem 0rem;
+  border: solid var(--dark-grey) thin;
+  box-shadow: 0px 0px 10px  var(--box-shadow-grey);
+  background-color: var(--site-light-black);
+  color: var(--light-grey);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.quiz-list a:hover{
+  background-color: var(--light-grey);
+  color: var(--site-light-black);
+}

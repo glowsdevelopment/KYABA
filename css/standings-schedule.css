@@ -1,0 +1,121 @@
+/*Css for standings.html 1-119*/
+/*Css for schedule.html 124-127*/
+:root{
+  --site-black:#2b2b2b;
+  --site-medium-black:#2b2b2b;
+  --site-light-black: #373737;
+  --site-white:#fff;
+  --light-grey:#f4f4f4;
+  --dark-grey:#A9A9A9;
+  --box-shadow-grey:#c8c8c8;
+  --darkest-grey:#848484;
+  --year-grey:#989984;
+  --site-red:#b5262f;
+}
+
+/*standing container*/
+.standings-container{
+  max-width: 78%;
+  margin: 0 auto;
+}
+
+/*standing details*/
+.standings-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  
+}
+
+/*standing year div - add box shadow*/
+.standings-year{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--site-white);
+  padding: .3rem 1.5rem .3rem .7rem;
+  border-radius: 4px;
+}
+
+.standings-year p{
+  color: var(--year-grey);
+  font-size: .85rem;
+}
+
+.standings-year span{
+  color: var(--site-medium-black);
+  font-size: 1.6rem;
+}
+
+/*standings season*/
+.standings-season{
+  color: var(--site-white);
+  background-color: var(--site-medium-black);
+  padding: 1.5rem 1rem;
+  font-size: 1.3rem;
+  border-radius: 4px;
+}
+
+/*share button*/
+.standings-share-button a{
+  background-color: var(--site-red);
+  color: var(--site-white);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+/*standings header*/
+.standings-header{
+  max-width: 100%;
+  margin-top: 3rem;
+  background-color: var(--site-red);
+  color: var(--site-white);
+}
+ 
+.standings-header p{
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  padding: .3rem 0;
+}
+
+/*Standings category*/
+.standings-category{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  justify-items: center;
+  background-color: var(--site-light-black);
+  color: var(--site-white);
+  padding: 1rem 0;
+  font-size: 1.15rem;
+}
+
+.standings-category p:hover{
+  color: var(--site-white);
+}
+
+/*teams-row*/
+.teams-row{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  justify-items: center;
+  padding: 1rem 0;
+}
+
+/*Team row*/
+.teams-row:nth-child(even){
+  background-color: var(--light-grey);
+}
+
+/*teamm name*/
+.team-name a{
+  color: var(--site-medium-black);
+}
+
+.team-name a:hover{
+  color: var(--darkest-grey);
+}
+
+
+
+

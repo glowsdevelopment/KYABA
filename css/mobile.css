@@ -1,0 +1,457 @@
+/*Home page*/
+@media(max-width:1200px){
+  /*showcase*/
+  /*showcase text*/
+  .showcase-text{
+  padding:12rem .8rem 0 0;
+}
+  .showcase-text p{
+    font-size: 1rem;
+  }
+  
+  .showcase-text h3{
+    font-size: 1.3rem;
+  }
+  
+  /*Poll button in showcase*/
+  .showcase-text a{
+    font-size: 1.15rem;
+  }
+}
+
+@media(max-width:965px){
+
+  .showcase-text p{
+    width: 40%;
+    text-align: right;
+  }
+
+  /*Grid layout on the home page*/
+  .home-page-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2.5rem;
+    max-width: 95%;
+    margin: 0 auto 3rem auto;
+  }
+
+  .home-page-box{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    height:38vh;
+    width:45%;
+  }
+  
+  /*font at the bottom of the box on the home page grid*/
+  .home-page-box h3 a{
+    position: relative;
+    font-size: 1.3rem;
+    bottom: 1rem;
+   }
+  
+  
+  /*font for links on the league leader section on the home page grid*/
+  .league-leader-box a{
+    border-radius: 50%;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .top-team-box a{
+    color: var(--site-white);
+    margin:5rem 0 1.5rem 0;
+    font-size: 2rem;
+  }
+
+  .vote-box a{
+    color: var(--site-white);
+    margin:5rem 0 1.5rem 0;
+    font-size: 2rem;
+  }
+
+}
+
+@media(max-width:740px){
+  /*remove main menu list items*/
+  .header-menu li{
+    display: none;
+  }
+
+  /*hamburger-menu-wrap*/
+  .hamburger-menu-wrap{
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  /*display hamburger menu list items*/
+  .hamburger-menu-wrap li{
+    display: block;
+  }
+
+}
+
+@media(max-width:415px){
+  
+  .home-page-box{
+    height:34vh;
+    width:45%;
+  }
+  
+  /*font at the bottom of the box on the home page grid*/
+  .home-page-box h3 a{
+    position: relative;
+    font-size: 1rem;
+    bottom: 1rem;
+   }
+  
+  
+  /*font for links on the league leader section on the home page grid*/
+  .league-leader-box a{
+    border-radius: 50%;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .top-team-box a{
+    color: var(--site-white);
+    margin:5rem 0 2rem 0;
+    font-size: 1.5rem;
+  }
+
+  .vote-box a{
+    color: var(--site-white);
+    margin:5rem 0 2rem 0;
+    font-size: 1.35rem;
+  }
+
+  .page-container{
+    max-width: 98%;
+  }
+
+}
+@media(max-width:320px){
+  
+  .home-page-box{
+    height:34vh;
+    width:55%;
+  }
+  
+  /*font at the bottom of the box on the home page grid*/
+  .home-page-box h3 a{
+    position: relative;
+    font-size: 1rem;
+    bottom: 1rem;
+   }
+  
+  
+  /*font for links on the league leader section on the home page grid*/
+  .league-leader-box a{
+    border-radius: 50%;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .top-team-box a{
+    color: var(--site-white);
+    margin:4.5rem 0 2rem 0;
+    font-size: 1.5rem;
+  }
+
+  .vote-box a{
+    color: var(--site-white);
+    margin:5rem 0 2rem 0;
+    font-size: 1.35rem;
+  }
+
+}
+
+
+
+
+
+/*----Schedule page----*/
+@media(max-width:900px){
+  /*standing container*/
+  .standings-container{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+/*Schedule page*/
+@media(max-width:650px){
+  
+  .standings-year p{
+    font-size: .8rem;
+  }
+  
+  .standings-year span{
+    font-size: 1.2rem;
+  }
+
+   /*standings season*/
+   .standings-season{
+    padding: .5rem;
+    font-size: .85rem;
+  }
+
+  /*share button*/
+  .standings-share-button a{
+    font-size: .8rem;
+    padding: .65rem;
+    border-radius: 4px;
+  }
+
+  /*game date for schedules*/
+  .game-date{
+    font-size: .9rem;
+  }
+
+  .team-one,
+  .team-two{
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+  
+  /*red button (game preview) on the schedule page*/
+  .team-game-preview a{
+    font-size: .75rem;
+    padding: .5rem;
+  }
+}
+
+  @media(max-width: 550px){
+ 
+  /*banner*/
+  .banner{
+    font-size: .75rem;
+  }
+
+   /*game date for schedules*/
+   .game-date{
+    font-size: .8rem;
+  }
+   /*game time for schedules*/
+   .game-time{
+    font-size: .8rem;
+  }
+
+  /*red button (game preview) on the schedule page*/
+  .team-game-preview a{
+    font-size: .68rem;
+    padding: .3rem .2rem;
+  }
+
+  }
+
+  @media(max-width: 415px){
+
+  /*red button (game preview) on the schedule page*/
+  .team-game-preview a{
+    font-size: .65rem;
+    padding: .2rem .2rem;
+  }
+
+  }
+
+  @media(max-width: 375px){
+
+  .team-one,
+  .team-two{
+    font-size: .78rem;
+  
+  }
+
+  /*red button (game preview) on the schedule page*/
+  .team-game-preview a{
+    font-size: .62rem;
+    padding: .15rem .1rem;
+  }
+
+  .player-row{
+    font-size: .75rem;
+  }
+
+  }
+
+  @media(max-width: 320px){
+
+   /*standings season*/
+   .standings-season{
+    padding: .35rem;
+    font-size: .75rem;
+  }
+
+   /*share button*/
+   .standings-share-button a{
+    padding: .55rem;
+    border-radius: 4px;
+  }
+
+
+   /*game date for schedules*/
+   .game-date{
+    font-size: .62rem;
+   }
+  
+   /*game time for schedules*/
+   .game-time{
+    font-size: .62rem;
+   }
+
+   .team-one,
+   .team-two{
+     font-size: .58rem;
+   
+   }
+
+   /*red button (game preview) on the schedule page*/
+   .team-game-preview a{
+    font-size: .57rem;
+    padding: .1rem .02rem;
+  
+  }
+
+  }
+
+  /*----standings page-----*/
+  @media(max-width:700px){
+    /*header on the standings chart containing each stat*/
+    .standings-category{
+      font-size: .85rem;
+    }
+    
+    /*font size for individual team stats on standings page*/
+    .teams-row{
+      font-size: .85rem;
+    }
+  }
+
+  /*----standings page-----*/
+  @media(max-width:415px){
+    /*header on the standings chart containing each stat*/
+    .standings-category{
+      font-size: .85rem;
+    }
+    
+    /*font size for individual team stats on standings page*/
+    .teams-row{
+      font-size: .72rem;
+    }
+  }
+
+  /*----standings page-----*/
+  @media(max-width:320px){
+    /*header on the standings chart containing each stat*/
+    .standings-category{
+      font-size: .85rem;
+      grid-template-columns: repeat(5,1fr);
+      justify-items: center;
+    }
+
+    /*teams-row*/
+   .teams-row{
+     display: grid;
+     grid-template-columns: repeat(5,1fr);
+    }
+
+    .team-name{
+      font-size: .7rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /*font size for individual team stats on standings page*/
+    .standings-ppg,
+    .standings-rpg,
+    .standings-apg,
+    .standings-spg,
+    .standings-bpg,
+    .team-ppg,
+    .team-rpg,
+    .team-apg,
+    .team-spg,
+    .team-bpg{
+      display: none;
+    }
+  }
+
+  @media(max-width:750px){
+
+    .page-container{
+      margin: 0 auto;
+      max-width: 85%;
+    }
+    /*Stats grid*/
+    .stats-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media(max-width:320px){
+
+    .page-container{
+      margin: 0 auto;
+      max-width: 85%;
+    }
+    /*Stats grid*/
+    .stats-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+  /*Individual Team Pages*/
+  @media(max-width:850px){
+
+    .team-container{
+      text-align: center;
+    }
+    /*Team leaders at the top of the page*/
+    .team-leaders{
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    /*hide the position for each player on the page*/
+    .player-row span{
+      display: none;
+    }
+  }
+
+  /*Individual Team Pages*/
+  @media(max-width:450px){
+    .team-roster-stats-header{
+      position: relative;
+      right:.1rem;
+    }
+  
+    .player-row{
+      font-size: .85rem;
+      position: relative;
+      left:.12rem;
+    }
+  }
+ 
+  /*Individual Team Pages*/
+  @media(max-width:320px){
+    .player-row{
+      font-size: .65rem;
+    }
+
+  }
+
+  @media(max-width:415px){
+    /*Quiz output container*/
+    .quiz-output-container{
+      font-size: .8rem;
+}
+  }
+ 
+
+  

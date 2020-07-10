@@ -1,0 +1,131 @@
+:root{
+  --site-black:#2b2b2b;
+  --site-medium-black:#2b2b2b;
+  --site-light-black: #373737;
+  --site-white:#fff;
+  --light-grey:#f4f4f4;
+  --dark-grey:#A9A9A9;
+  --box-shadow-grey:#c8c8c8;
+  --darkest-grey:#848484;
+  --year-grey:#989984;
+  --site-red:#b5262f;
+  --correct-green:#2ba646;
+  --incorrect-red:#e21724; 
+}
+
+/*CSS for quiz pages starts here*/
+/*Quiz directions*/
+.quiz-title{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/*Quiz container*/
+.quiz-question-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+  padding: 3rem 2rem;
+  margin: 3rem auto 0 auto;
+  border: solid var(--site-medium-black) thin;
+  border-top: solid var(--site-light-black) 4px;
+  box-shadow: 0px 4px 8px  var(--box-shadow-grey);
+}
+
+.question{
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.answers{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Answer buttons*/
+.answers button{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  margin-bottom: .6rem;
+  font-size: 1rem;
+  background-color: var(--site-white);
+
+}
+
+/*Keep the correct button highlight even while disabled*/
+.correct-button[disabled]{
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem 1rem;
+   margin-bottom: .6rem;
+   font-size: 1rem;
+   background: #fff;
+   color: #333;
+
+}
+
+.answers button:hover{
+  background-color:var(--light-grey);
+  cursor: pointer;
+}
+
+/*correct & incorrect symbol color*/
+.correct-button i{
+  background-color: var(--correct-green);
+  color:white;
+  border-radius: 50%;
+  padding: .5rem;
+  font-size: .8rem;
+  
+}
+
+.incorrect-button i{
+  background-color:var(--incorrect-red);
+  color: white;
+  border-radius: 50%;
+  padding: .5rem .6rem;
+  font-size: .8rem;
+
+}
+
+
+
+/*Hide the correct & incorrect icons*/
+
+
+#question-1 .answers button:focus i{
+  display: inline;
+}
+
+/*Quiz output container*/
+.quiz-output-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 66%;
+  padding:  1rem;
+  margin: 3rem auto 0 auto;
+  border: solid var(--site-light-black) thin;
+  box-shadow: 0px 0px 8px  var(--box-shadow-grey);
+  font-size: 1.4rem;
+  align-items: center;
+  text-align: center;
+}
+ /*Questions remaining div*/
+.questions-remaining{
+  margin: 4rem 0;
+}
+
+.questions-remaining-output{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.total-score-output{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2.5rem;
+}

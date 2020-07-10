@@ -1,0 +1,169 @@
+:root{
+  --site-black:#2b2b2b;
+  --site-medium-black:#2b2b2b;
+  --site-light-black: #373737;
+  --site-white:#fff;
+  --light-grey:#f4f4f4;
+  --medium-grey:#dcdddf;
+  --dark-grey:#A9A9A9;
+  --box-shadow-grey:#c8c8c8;
+  --darkest-grey:#848484;
+  --site-red:#b5262f;
+}
+
+/*page container for about us page*/
+.teams-container{
+  max-width: 75%;
+  margin:0 auto;
+}
+
+.teams-list{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.teams-list a{
+  padding: 2rem 0rem;
+  border: solid var(--dark-grey) thin;
+  box-shadow: 0px 0px 10px  var(--box-shadow-grey);
+  background-color: var(--site-light-black);
+  color: var(--light-grey);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.teams-list a:hover{
+  background-color: var(--light-grey);
+  color: var(--site-light-black);
+}
+.team-header{
+  margin-top: 2rem;
+}
+
+/*Name of the team at the top of the page*/
+.team-name{
+  margin-bottom: .7rem;
+}
+ /*social  media div at the top of the page*/
+.team-social-media{
+  margin-bottom: 1rem;
+}
+
+.team-social-media a{
+  color: var(--site-black);
+  margin-right: .25rem;
+}
+/*Team leaders at the top of the page*/
+.team-leaders{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+/*team leader individual box*/
+.team-leader-box{
+  border: solid var(--medium-grey) thin;
+  border-radius: 1%;
+  padding: 1rem 0 1rem .5rem;
+  
+}
+
+/*Next game grid*/
+.team-next-game{
+  margin-top: 2.5rem;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  border: solid var(--dark-grey) thin;
+  box-shadow: 0px 0px 10px  var(--box-shadow-grey);
+}
+
+/*place all items in the middle of the game container*/
+.team-one,
+.team-two,
+.versus,
+.team-game-preview
+{
+  margin:auto 0;
+}
+
+/*team game date*/
+.game-date-time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: .02rem;
+}
+
+.game-date{
+  color:var(--darkest-grey);
+ 
+}
+
+.game-time{
+  color: var(--site-medium-black);
+}
+
+.team-one,
+.team-two{
+  color: var(--site-medium-black);
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.versus{
+  color:var(--darkest-grey);
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team-game-preview{
+  display: flex;
+  justify-content: center;
+}
+
+.team-game-preview a{
+  color: var(--site-white);
+  background-color: var(--site-red);
+  padding: .5rem 1rem;
+  letter-spacing: .01rem;
+  border: none;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+/*Team roster and stats*/
+.team-roster-stats{
+  margin-top: 4rem;
+  border: solid var(--medium-grey) thin;
+  padding-bottom: .15rem;
+}
+
+/* category headers at the top of the roster/stat chart*/
+.team-roster-stats-header{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  background-color: var(--site-light-black);
+  color: var(--site-white);
+  padding: .7rem;
+}
+
+/*individual player rows on the stat sheet*/
+.player-row{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  padding: .5rem 0 .5rem .2rem;
+
+}
+
+.player-row:nth-child(even){
+  background-color:var(--site-white);
+}
+
+.player-row:nth-child(odd){
+  background-color:var(--light-grey);
+}

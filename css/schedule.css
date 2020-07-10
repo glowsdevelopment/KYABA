@@ -1,0 +1,138 @@
+:root{
+  --site-black:#2b2b2b;
+  --site-medium-black:#2b2b2b;
+  --site-light-black: #373737;
+  --site-white:#fff;
+  --light-grey:#f4f4f4;
+  --medium-grey:#dcdddf;
+  --dark-grey:#A9A9A9;
+  --box-shadow-grey:#c8c8c8;
+  --darkest-grey:#848484;
+  --site-red:#b5262f;
+}
+
+/*standing details*/
+.standings-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  
+}
+
+/*standing year div - add box shadow*/
+.standings-year{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--site-white);
+  padding: .3rem 1.5rem .3rem .7rem;
+  border-radius: 4px;
+}
+
+.standings-year p{
+  color: var(--year-grey);
+  font-size: .85rem;
+}
+
+.standings-year span{
+  color: var(--site-medium-black);
+  font-size: 1.6rem;
+}
+
+/*standings season*/
+.standings-season{
+  color: var(--site-white);
+  background-color: var(--site-medium-black);
+  padding: 1.5rem 1rem;
+  font-size: 1.3rem;
+  border-radius: 4px;
+}
+
+/*share button*/
+.standings-share-button a{
+  background-color: var(--site-red);
+  color: var(--site-white);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+
+.team-container{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/*CSS for schedule.html page*/
+.week-title{
+  font-size: 1.8rem;
+  margin: 5rem 0 1.5rem 0;
+}
+
+/*Next game grid*/
+.team-next-game{
+  margin-top: 2.5rem;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  border: solid var(--dark-grey) thin;
+  box-shadow: 0px 0px 10px  var(--box-shadow-grey);
+}
+
+/*place all items in the middle of the game container*/
+.team-one,
+.team-two,
+.versus,
+.team-game-preview
+{
+  margin:auto 0;
+}
+
+/*team game date*/
+.game-date-time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: .02rem;
+}
+
+.game-date{
+  color:var(--darkest-grey);
+ 
+}
+
+.game-time{
+  color: var(--site-medium-black);
+}
+
+.team-one,
+.team-two{
+  color: var(--site-medium-black);
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.versus{
+  color:var(--darkest-grey);
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team-game-preview{
+  display: flex;
+  justify-content: center;
+}
+
+.team-game-preview a{
+  color: var(--site-white);
+  background-color: var(--site-red);
+  padding: .5rem 1rem;
+  letter-spacing: .01rem;
+  border: none;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+

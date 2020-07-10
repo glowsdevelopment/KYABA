@@ -1,0 +1,102 @@
+:root{
+  --site-black:#2b2b2b;
+  --site-medium-black:#2b2b2b;
+  --site-light-black: #373737;
+  --site-white:#fff;
+  --light-grey:#f4f4f4;
+  --dark-grey:#A9A9A9;
+  --box-shadow-grey:#c8c8c8;
+  --darkest-grey:#848484;
+  --year-grey:#989984;
+  --site-red:#b5262f;
+}
+
+/*CSS for the stat page that holds the list (player stats and team stats)*/
+/*page container for about us page*/
+.stats-container{
+  max-width: 75%;
+  margin:0 auto;
+}
+
+.stats-list{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.stats-list a{
+  padding: 2rem 0rem;
+  border: solid var(--dark-grey) thin;
+  box-shadow: 0px 0px 10px  var(--box-shadow-grey);
+  background-color: var(--site-light-black);
+  color: var(--light-grey);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.stats-list a:hover{
+  background-color: var(--light-grey);
+  color: var(--site-light-black);
+}
+
+
+/*Start of CSS for "stats-player.html" and "stats-team.html"*/
+/*Stats grid*/
+.stats-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*offensive title and defensive title*/
+.offensive-title,
+.defensive-title{
+  margin: 4rem 0 1rem 0;
+}
+
+/*offensive and defensive box*/
+.offensive-box,
+.defensive-box{
+  max-width: 90%;
+  margin-bottom: 5rem;
+  border: solid var(--dark-grey) thin;
+}
+/*offensive and defensive box*/
+.offensive-box a,
+.defensive-box a{
+  color: var(--site-light-black);
+}
+
+/*offensive and defensive stat header*/
+.offensive-stat-header,
+.defensive-stat-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--site-medium-black);
+  color: var(--site-white);
+  padding: .2rem .4rem;
+}
+
+/*player row*/
+.player-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5rem .25rem;
+}
+
+.player-row:nth-child(odd){
+  background-color: var(--light-grey);
+  
+}
+
+/*player info - ranking and name*/
+.player-ranking-info{
+  display: flex;
+}
+
+.player-ranking-info p:first-child{
+  margin-right: .8rem;
+}

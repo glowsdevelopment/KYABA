@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khand&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 1.4;
+  letter-spacing: .2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:root{
+  --site-black:#2b2b2b;
+  --site-medium-black:#2b2b2b;
+  --site-light-black: #373737;
+  --site-white:#fff;
+  --light-grey:#f4f4f4;
+  --dark-grey:#A9A9A9;
+  --menu-border-grey:#c9c8c9;
+}
+
+.page-container{
+ max-width: 90%;
+ margin: 0 auto;
+}
+
+/*basic styling*/
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/*banner*/
+.banner{
+  background-color: var(--site-black);
+  color: var(--site-white);
+  text-align: center;
+  padding: .5rem 0;
+}
+
+/*header*/
+header{
+  position: sticky;
+  top: 0;
+  border-bottom: solid var(--light-grey) thin;
+  background-color: var(--site-white);
+  z-index: 1;
+}
+
+/*header menu*/
+.header-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.header-menu li{
+  white-space: nowrap;
+}
+
+.header-menu a{
+  color: var(--site-black); 
+}
+
+.header-menu a:hover{
+  color: var(--dark-grey);
+}
+
+/*sub menu*/
+.header-menu .sub-menu{
+  display: none;
+}
+
+.header-menu li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  border: solid var(--menu-border-grey) thin;
+  box-shadow: 0 0 4px var(--menu-border-grey);
+  padding: .2rem .5rem 1rem .5rem;
+  background-color: var(--site-white);
+}
+
+.sub-menu li{
+  padding-top: .5rem;
+}
+
+/*header logo*/
+.header-logo a{
+  color: var(--site-black);
+  font-size: 3rem;
+}
+
+.header-logo a:hover{
+  color: var(--dark-grey);
+}
+
+/*wrapper for the hamburger menu*/
+.hamburger-menu-wrap{
+  height: 20px;
+  z-index: 1;
+  display: none;
+}
+
+/*the checkbox - not visible*/
+.hamburger-menu-wrap .toggler{
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+}
+
+/*the box for the hamburger lines*/
+.hamburger-menu-wrap .hamburger{
+  position: absolute;
+  margin-bottom: 3rem;
+  z-index: 1;
+  height: 8px;
+  width: 20px;
+ padding: 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+/*hamburger lines - the middle line - the transition makes line spin when clicked*/
+.hamburger-menu-wrap .hamburger > div{
+  position: relative;
+  bottom: .5rem;
+  flex: none;
+  width: 100%;
+  height:2px;
+  background-color: var(--site-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/*hamburger lines top and bottom*/
+.hamburger-menu-wrap .hamburger > div:before,
+.hamburger-menu-wrap .hamburger > div:after{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height:2px;
+  background-color: var(--site-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu-wrap .hamburger > div:after{
+  top: 10px;
+}
+
+
+/*Toggler animation that rotates the lines when clicked to make x - get the div inside the hamburger*/
+.hamburger-menu-wrap .toggler:checked + .hamburger > div{
+  transform: rotate(135deg);
+}
+
+/*rotates the top and bottom lines 90 degrees to make x*/
+.hamburger-menu-wrap .toggler:checked + .hamburger > div:before,
+.hamburger-menu-wrap .toggler:checked + .hamburger > div:after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/*show hamnurger menu - grab hamburger menu when checkbox checked*/
+.hamburger-menu-wrap .toggler:checked  ~ .hamburger-menu{
+  visibility: visible;
+}
+
+.hamburger-menu-wrap .hamburger-menu{
+  visibility: hidden;
+  position: relative;
+  top: 2.8rem;
+  left: 1rem;
+}
+
+.hamburger-menu ul{
+  background-color: var(--site-white);
+  border:solid var(--light-grey) thin; 
+  border-top: none;
+  padding: 1rem;
+}
+
+.hamburger-menu li{
+  margin-bottom: .6rem;
+}
+.hamburger-menu li:last-child{
+  margin-bottom: 0rem;
+}
+
+/*Showcase*/
+.showcase{
+  background: url(/img/showcase-1.jpg) no-repeat center center/cover;
+  height:80vh;
+  max-width: 100%;
+}
+
+/*showcase text*/
+.showcase-text{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding:12rem 4rem 0 0;
+  color:var(--site-white);
+}
+
+.showcase-text p{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.showcase-text h3{
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+/*Poll button in showcase*/
+.showcase-text a{
+  color: var(--site-white);
+  border: solid var(--site-white) thin;
+  padding: .85rem 1.5rem;
+  font-size: 1.35rem;
+}
+
+.showcase-text a:hover{
+  color: var(--site-black);
+  background-color: var(--site-white);
+}
+
+/*Grid on the home page*/
+.home-page-grid-header{
+  color: var(--site-light-black);
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+/*underline on the grid header*/
+.home-page-grid-header::after{
+  content: ""; 
+  display: block; 
+  margin: 0 auto; 
+  max-width: 6%; 
+  padding-top: .2rem; 
+  border-bottom:  solid var(--site-light-black) thick;
+}
+
+/*Grid layout on the home page*/
+.home-page-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 95%;
+  margin: 0 auto 3rem auto;
+}
+
+/*styling for all boxes on the home page grid*/
+.home-page-box{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  height:45vh;
+  width:75%;
+  background-color: var(--site-black);
+  color: var(--site-white);
+  text-align: center;
+}
+
+/*styling for all header text on each box on the home page grid*/
+.home-page-box h3 a{
+  position: relative;
+  font-size: 1.3rem;
+  bottom: 2rem;
+  border: none;
+  color: var(--site-white);
+  white-space: nowrap;
+ }
+
+/*font for league leader boxes on the home page grid*/
+.league-leader-box a{
+  color: var(--site-white);
+  margin:auto;
+  border: solid var(--site-white) medium;
+  border-radius: 50%;
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+/*top team box styling on the home page grid*/
+.top-team-box{
+  background-color: var(--site-black);
+  color: var(--site-white);
+  text-align: center;
+}
+.top-team-box a{
+  color: var(--site-white);
+  margin:6.5rem 0 2.5rem 0;
+  font-size: 2rem;
+}
+
+/*vote box styling for the home page grid*/
+.vote-box{
+  background-color: var(--site-black);
+  color: var(--site-white);
+  text-align: center;
+}
+.vote-box a{
+  color: var(--site-white);
+  margin:6.5rem 0 2.5rem 0;
+  font-size: 2rem;
+}
+
+/*social media banner at the bottom of the home page*/
+.home-page-social-media{
+  background-color: var(--light-grey);
+  margin-top: 14rem;
+}
+
+.home-page-social-media-text{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 1rem 0 3.5rem 0;
+}
+
+/*Kyaba logo in social media at the bottom of each page*/
+.kyaba-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/*social media info*/
+.social-media-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+/*social media icons*/
+.social-media-icons{
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-icons i{
+  margin-right: .5rem;
+}
+
+/*footer*/
+footer{
+  background-color: var(--site-black);
+  color: var(--site-white);
+  text-align: center;
+}
+
+footer p{
+  padding: 1rem 0;
+}
+
+/*page container for pages outside of the home page and about page*/
+.page-container{
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/*page title for pages with title at the top of the page*/
+.page-title{
+  text-align: center;
+  margin: 2rem 1rem 2rem 0;
+}
+
+.page-list li{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.page-list a{
+  color: var(--site-light-black);
+}
+
+.page-list a:hover{
+  color: var(--dark-grey);
+}
+
+
+
